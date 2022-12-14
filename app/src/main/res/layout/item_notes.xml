@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/CommonBackground"
+    android:layout_height="wrap_content">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="240dp"
+        android:textSize="24dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:id="@+id/tv_notes_name"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="23 November 2022"
+        app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:id="@+id/tv_notes_time"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_notes_name"
+        android:textSize="16dp"
+        android:text="Bla Bla Bla Bla Bla Bla, and bla bla bla, because bla bla bla."
+        android:layout_marginTop="12dp"
+        android:id="@+id/tv_notes_text"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
